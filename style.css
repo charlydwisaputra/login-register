@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.hdqwalls.com/wallpapers/minecraft-sunset-yv.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0,7);
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+
+.glass-card {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: white;
+    animation: fadeInUP 0,6s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.glass-card label {
+    font-size: 13px;
+}
+
+.glass-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.glass-card p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.glass-card input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.glass-card input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.glass-card button {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.glass-card button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    opacity: 0,8;
+}
+
+@keyframes fadeInUp {
+    form {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
